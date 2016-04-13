@@ -1,0 +1,35 @@
+@charset "UTF-8";
+#jv-counter{
+	padding: 10px; 
+	-moz-border-radius: 8px; -webkit-border-radius: 8px; -o-border-radius:8px; position: relative; display:block;
+    background: #dddddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dddddd 15%, #ffffff 47%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#dddddd), color-stop(47%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dddddd 15%,#ffffff 47%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dddddd 15%,#ffffff 47%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dddddd 15%,#ffffff 47%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dddddd 15%,#ffffff 47%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */    
+}
+#jv-counter hr{width: 95%; margin:10px 0 10px 0;}
+#jv-counter-digit { margin:0 auto; text-align:center;}
+#jv-counter-online{padding-left: 10px; margin-bottom: 10px;}
+#jv-counter-stats{ width:100%; margin:0 auto; }
+#jv-counter-stats table#counter-stats{width:100%; font-size:12px; margin:5px 1px 15px 1px;  }
+#jv-counter-stats #counter-stats tr{ padding:10px 0 10px 0; margin-top:5px;}
+.jv-counter-row img { margin:0 auto; padding:0; border:none; }/*
+#jeprodesign-right-content-wrapper #jvcounter{
+    
+}*/
+#jv-counter h2{text-align:center;}
+#jv-counter:before{
+    -moz-box-shadow: 0 15px 8px rgba(0, 0, 0, 0.9); box-shadow: 0 15px 8px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotate(-5deg); -moz-transform: rotate(-5deg); -o-transform: rotate(-5deg);
+    position: absolute; left: 10px; bottom: 15px; z-index: -1; width: 50%; max-width: 300px; height: 15%; content: "";
+}
+#jv-counter:after{
+    -moz-box-shadow: 0 15px 8px rgba(0, 0, 0, 0.9); box-shadow: 0 15px 8px rgba(0, 0, 0, 0.9);
+    -webkit-transform: rotate(5deg); -moz-transform: rotate(5deg); -o-transform: rotate(5deg);
+    position: absolute; right: 10px; bottom: 15px; z-index: -1; width: 50%; max-width: 300px; height: 15%; content: "";
+}
+#jvcounter-online{ font-size: 12px;}
