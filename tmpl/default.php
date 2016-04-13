@@ -28,6 +28,16 @@ $doc->addStyleSheet('modules/mod_jvcounter/assets/jvcounter.css');
 <div id="jv-counter">
     <div id="jv-counter-title" >
         <h4><?php echo JText::_("MOD_JVCOUNTER_TITLE"); ?></h4>
+        <div id="jv-counter-digit-sm">
+            <?php
+            $arr = modJVCounterHelper::getDigits($allVisitors, $jvcNumberOfDigits);
+            $digit_img = '';
+            foreach( $arr as $digit ){
+                $digit_img .= modJVCounterHelper::showDigitImage( $jvcDigitType, $digit);
+            }
+            echo $digit_img;
+            ?>
+        </div>
     </div>
     <?php if( $jvcShowStatistics ) {?>
     <div id="jv-counter-stats">

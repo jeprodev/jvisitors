@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #jv-counter{
-	padding: 10px; 
-	-moz-border-radius: 8px; -webkit-border-radius: 8px; -o-border-radius:8px; position: relative; display:block;
+	padding: 10px; min-width:180px; max-width:250px;
+    -moz-border-radius: 8px; -webkit-border-radius: 8px; -o-border-radius:8px; position: relative; display:block;
     background: #dddddd; /* Old browsers */
     background: -moz-linear-gradient(top,  #dddddd 15%, #ffffff 47%, #ffffff 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#dddddd), color-stop(47%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
@@ -11,8 +11,10 @@
     background: linear-gradient(to bottom,  #dddddd 15%,#ffffff 47%,#ffffff 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */    
 }
+#jv-counter-title{ text-align: center;}
 #jv-counter hr{width: 95%; margin:10px 0 10px 0;}
 #jv-counter-digit { margin:0 auto; text-align:center;}
+#jv-counter-digit-sm { margin:0 auto; text-align:center; display:none; }
 #jv-counter-online{padding-left: 10px; margin-bottom: 10px;}
 #jv-counter-stats{ width:100%; margin:0 auto; }
 #jv-counter-stats table#counter-stats{width:100%; font-size:12px; margin:5px 1px 15px 1px;  }
@@ -33,3 +35,13 @@
     position: absolute; right: 10px; bottom: 15px; z-index: -1; width: 50%; max-width: 300px; height: 15%; content: "";
 }
 #jvcounter-online{ font-size: 12px;}
+
+@media screen and (max-width: 480px){
+    #jv-counter{ width: 98%; float: left;}
+    #jv-counter-title{ float: left; width: 98%; margin: 0 auto; }
+    #jv-counter-title h4{ float: left;  }
+    #jv-counter hr{ display: block; }
+    #jv-counter-digit{ margin:0 auto; text-align:center; display:none; }
+    #jv-counter-digit-sm { margin:8px 5px; text-align:right; display: block; float:right;  }
+    #jv-counter-stats{ display:none; }
+}
