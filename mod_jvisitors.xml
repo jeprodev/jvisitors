@@ -1,0 +1,73 @@
+<?xml version = "1.0" encoding = "utf-8"?> 
+<extension version="3.0" type="module" client="site" method="upgrade" > 
+	<name>visitor counter</name>
+	<version>1.0.3</version> 
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license> 
+	<author>jeprodev</author> 
+	<authoremail>jeprodev@gmail.com</authoremail> 
+	<authorurl>jeprodev.net</authorurl> 
+	<copyright>Copyright (C) 2011. All rights reserved.</copyright>
+	<description>MOD_VISITOR_COUNTER_XML_DESCRIPTION</description>
+	<creationDate>2 - 7 - 2012</creationDate> 
+	<files> 
+		<filename module="mod_jvisitors">mod_jvisitors.xml</filename>
+		<filename module="mod_jvisitors">mod_jvisitors.php</filename>
+		<filename>helper.php</filename> 
+		<filename>index.html</filename> 
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.mod_jvisitors.ini</language>
+		<language tag="en-GB">language/en-GB.mod_jvisitors.sys.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_jvisitors.ini</language>
+		<language tag="fr-FR">language/fr-FR.mod_jvisitors.sys.ini</language>
+	</languages>
+	<config> 
+		<fields name="params" > 
+			<fieldset name="BASIC"> 
+				<field name="moduleclass_sfx" type="text" size="40" default="" label="Module Class Suffix" description="Choose a module class suffix" /> 
+				<field name="j_visitors_is_sunday" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_TODAY_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_TODAY_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+			<fieldset name="DISPLAY_CONFIG">
+				<field name="j_visitors_show_today" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_TODAY_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_TODAY_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_yesterday" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_YESTERDAY_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_YESTERDAY_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_this_week" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_THIS_WEEK_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_THIS_WEEK_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_last_week" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_LAST_WEEK_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_LAST_WEEK_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_this_month" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_THIS_MONTH_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_THIS_MONTH_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_last_month" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_LAST_MONTH_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_LAST_MONTH_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_show_all" type="radio" default="1" class="btn-group" label="MOD_VISITOR_COUNTER_SHOW_ALL_VISITS_LABEL" description="MOD_VISITOR_COUNTER_SHOW_ALL_VISITS_DESC"  >
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="j_visitors_stats_type" type="list" delault="default" label="MOD_VISITOR_COUNTER_STATS_LABEL" description="MOD_VISITOR_COUNTER_STATS_DESC" >
+					<option value="default">Default</option>
+				</field>
+				<field name="j_visitors_digit_type" type="list" delault="default" label="MOD_VISITOR_COUNTER_DIGIT_LABEL" description="MOD_VISITOR_COUNTER_DIGIT_DESC" >
+					<option value="default">Default</option>
+				</field>
+			</fieldset>
+		</fields> 
+	</config> 
+</extension> 
